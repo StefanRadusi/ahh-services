@@ -21,4 +21,9 @@ router.get('/fromCloudinary', function(req, res, next) {
 
 });
 
+
+router.get('/goofy', function(req, res) {
+  request('http://images1.wikia.nocookie.net/__cb20120715102950/disney/images/a/a5/Disneygoofy2012.jpeg').pipe(res);
+});
+
 module.exports = router;
